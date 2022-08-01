@@ -41,7 +41,7 @@ button {
 }
 
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 800px) {
   .sidenav {padding-top: 15px;
   width: 30%;
   }
