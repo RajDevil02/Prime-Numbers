@@ -42,7 +42,13 @@ button {
 
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 15px;
+  width: 30%;
+  }
   .sidenav a {font-size: 18px;}
   .sidenav h1 {font-size: 18px;}
+  .main {
+	  margin-left: 120px;
+	  font-size: 14px;
+  }
 }
