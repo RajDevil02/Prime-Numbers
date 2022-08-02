@@ -41,14 +41,17 @@ button {
 }
 
 
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 800px) {
   .sidenav {padding-top: 15px;
-  width: 30%;
+  width: 126px;
   }
   .sidenav a {font-size: 18px;}
   .sidenav h1 {font-size: 18px;}
   .main {
 	  margin-left: 120px;
-	  font-size: 14px;
+	  font-size: 10px;
+  }
+  input {
+	  width: 100px;
   }
 }
