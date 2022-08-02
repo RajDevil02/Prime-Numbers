@@ -1,0 +1,95 @@
+<!doctype HTML>
+<head>
+	<title>Divisibles</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href = "styles.css">
+</head>
+<body>
+<div class="sidenav">
+<h1>Contents</h1>
+  <a href="prime.html">Identify Prime</a>
+  <a href="prime range.html">Prime in Ranges</a> 
+  <a href="divisibles.html">Divisibles</a> 
+  
+</div>
+
+<div class="main">
+	<h1 class="topic">Divisibles</h1>
+	<input type = "text" id="demo"></input>
+	<p> Divisibles: <span id="prime"></span></p>
+	<button onclick="divisibleby()">check</button>
+	<button onclick="cleara()">clear</button>
+	
+<div>
+
+<script>
+	function divisibleby() {
+		var dnum = parseInt(document.getElementById("demo").value);
+		var dlist = [];
+		for(var i=1;i<=dnum;i++){
+			if(dnum%i==0){
+				dlist.push(i);
+			}
+		}
+		document.getElementById("prime").innerHTML = dlist;
+	}
+	
+	/*function primefactors() {
+		var dnum = parseInt(document.getElementById("demo").value);
+		var dlist = [];
+		var dprime = [];
+		var bool = "";
+		for(var i=1;i<=dnum;i++){
+			if(dnum%i==0){
+				dlist.push(i);
+			}
+		}
+		for (var i=0; i<dlist.length;i++){
+			var bool = primefunction(dlist[i]);
+			if (bool=='y'){
+				dprime.push(dlist[i]);
+			}
+		}
+		
+	}
+	
+	function primefunction(a){
+		
+		var num1 = a;
+		var crisp = document.getElementById("prime");
+		
+		
+		if (num1==1 || num1=dnum){
+			return "n";
+		}
+		else if (num1==2){
+			return "y";
+		}
+		else {
+			var count1 = 0;
+			for(var i=2;i<num1;i++){
+				if(num1%i==0){
+					count1 = count1 + 1;
+					break;
+				}
+				else{
+					count1 = 0;
+				}
+			}
+			if (count1 == 1){
+				return "n";
+			}
+			else{
+				return "y";
+			}
+		}
+				
+		
+	}*/
+
+</script>
+
+
+</body>
+</html>
+
