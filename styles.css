@@ -40,6 +40,11 @@ button {
 	color: white;
 }
 
+h1.topic {
+	padding-left: 0px;
+	font-size: 40px;
+}
+
 
 @media screen and (max-width: 800px) {
   .sidenav {padding-top: 15px;
@@ -54,4 +59,8 @@ button {
   input {
 	  width: 100px;
   }
+  h1.topic {
+	padding-left: 0px;
+	font-size: 30px;
+}
 }
